@@ -1,0 +1,16 @@
+@WebApplicationAPBD_HostAddress = http://localhost:5036
+
+GET {{WebApplicationAPBD_HostAddress}}/api/rooms
+Accept: application/json
+
+###
+
+GET {{WebApplicationAPBD_HostAddress}}/api/rooms?minCapacity=20&hasProjector=true&activeOnly=true
+Accept: application/json
+
+###
+
+GET {{WebApplicationAPBD_HostAddress}}/api/reservations?date=2026-05-10&status=confirmed&roomId=1
+Accept: application/json
+
+###
